@@ -3,175 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sameer Karam Portfolio</title>
+  <title>Sameer Karam | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header class="header">
-    <h1>Sameer Karam</h1>
     <nav>
-      <button onclick="showSection('introduction')">Home</button>
-      <button onclick="showSection('professional_experience')">Professional Experience</button>
-      <button onclick="showSection('projects')">Projects</button>
-      <button onclick="showSection('skills')">Skills</button>
-      <button onclick="showSection('contact')">Get In Touch</button>
+      <a href="#introduction"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#professional_experience"><i class="fas fa-briefcase"></i><span>Experience</span></a>
+      <a href="#projects"><i class="fas fa-code"></i><span>Projects</span></a>
+      <a href="#skills"><i class="fas fa-tools"></i><span>Skills</span></a>
+      <a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
     </nav>
   </header>
+
   <main>
-    <section id="introduction" class="content-section">
-      <!--<h2>Introduction</h2>
-      -->
-      <div class = "about-container">
-        <div class= "about-me-1">
-          <h3>About Me</h3>
+    <section id="introduction" class="content-section hero-section">
+      <div class="hero-image">
+        <img src="assets/img/pages/GraduationPicture.jpg" alt="Sameer Karam">
+      </div>
+      <div class="about-container">
+        <div class="about-content">
+          <h3><i class="fas fa-user"></i> About Me</h3>
           <p>
-            I am Sameer Karam, a Computer Engineering student at McGill University. My passion for technology and problem-solving has driven me to pursue a career in software development and engineering. With a solid foundation in programming languages, data structures, and hardware systems, I continuously seek opportunities to apply my knowledge and creativity to real-world challenges.</p>
+            I am Sameer Karam, a Computer Engineering student at McGill University. My passion for technology and problem-solving has driven me to pursue a career in software development and engineering. With a solid foundation in programming languages, data structures, and hardware systems, I continuously seek opportunities to apply my knowledge and creativity to real-world challenges.
+          </p>
+          <p>
+            Throughout my academic journey, I've developed expertise in various areas of computer engineering, from software development and machine learning to computer vision and full-stack development. I'm particularly interested in projects that combine innovative technology with real-world impact, as demonstrated through my work in medical imaging analysis and sustainable transportation solutions.
           </p>
         </div>
-        <div class = "about-portfolio" >
-          <h3> About Portfolio</h3>
-          <p>This portfolio showcases my journey and accomplishments in the field of computer engineering. Here, you will find a collection of my projects, professional experiences, and technical skills. Each section is designed to provide insights into my capabilities and achievements. Whether you are a potential employer, collaborator, or peer, I hope you find my work informative and inspiring.</p>
-        </div>
-        <div class="about-image-1">
-          <img src="assets/img/SameerPicture.jpg" alt="Introduction">
-        </div>
-        
       </div>
     </section>
-    <section id="professional_experience" class="content-section" style="display: none;">
-      <!--<h2>Professional Experience</h2>
-      -->
+
+    <section id="professional_experience" class="content-section">
+      <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
       <div class="experience">
-      <div class = "jaffa.net-image">
-        <img src="assets/img/pages/jaffa.net img.png" alt="Company Logo">
-      </div>
-        <div class = "project-description">
-          <h3>Software Developer Intern</h3>
-          <h4>Jaffa.Net, Ramallah, Palestine | July 2023 – August 2023</h4>
+        <div class="jaffa-net-image">
+          <img src="assets/img/pages/jaffa.net%20img.png" alt="Jaffa.Net Logo">
+        </div>
+        <div class="project-description">
+          <h3><i class="fas fa-building"></i> Software Developer Intern</h3>
+          <h4><i class="fas fa-map-marker-alt"></i> Jaffa.Net, Ramallah, Palestine | July 2023 – August 2023</h4>
           <ul>
             <li>Designed and developed dynamic and responsive web pages using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and enhancing user experience with visually appealing interfaces.</li>
             <li>Customized and optimized a comprehensive restaurant management application in Java, implementing features such as order processing, inventory management, and user authentication, significantly improving operational efficiency.</li>
             <li>Collaborated with a team of developers to integrate third-party APIs and enhance application functionality.</li>
             <li>Conducted thorough testing and debugging to ensure the software's reliability and performance, reducing bugs by 20%.</li>
-            <li>Strengthened my proficiency in Python by solving advanced data structures and algorithmic problems on competitive programming platforms, leading to improved problem-solving skills and a deeper understanding of software development principles.</li>
-            <li>Participated in Agile development processes, including sprint planning, daily stand-ups, and retrospectives, to ensure timely delivery of project milestones.</li>
-            <li>Presented project updates and technical findings to senior management and stakeholders, demonstrating the value and impact of the implemented solutions.</li>
+            <li>Strengthened my proficiency in Python by solving advanced data structures and algorithmic problems on competitive programming platforms.</li>
+            <li>Participated in Agile development processes, including sprint planning, daily stand-ups, and retrospectives.</li>
+            <li>Presented project updates and technical findings to senior management and stakeholders.</li>
           </ul>
         </div>
       </div>
     </section>
-    <section id="projects" class="content-section" style="display: none;">
-      <!--<h2>Projects</h2>
-      -->
+
+    <section id="projects" class="content-section">
+      <h2 class="section-title"><i class="fas fa-code"></i> Projects</h2>
+      
       <div class="project">
-        <div class = "project-description">
-          <h3>1.Machine Learning Chess Engine</h3>
-          <p>Neural Networks, Python | May 2024 – Present</p>
-          <ul>
-            <li>Currently engaged in building and training a neural network specifically for the game of chess, aiming to implement AlphaZero's reinforcement learning capabilities to achieve superhuman performance.</li>
-            <li>Working on integrating Monte Carlo Tree Search (MCTS) to enhance the efficiency of policy planning and decision-making within our chess-focused reinforcement learning framework.</li>
-            <li>Utilizing Python for the development and implementation of advanced algorithms, ensuring robust and scalable code for complex neural network models and reinforcement learning tasks tailored to mastering chess.</li>
-          </ul>
+        <div class="capstone-project-image">
+          <img src="assets/img/pages/CapstoneSimulator.png" alt="High-Speed Rail Route Simulation">
         </div>
-        <div class = "Chess-Project-image">
-          <img src="assets/img/pages/ChessAI.jpeg" alt="AI project Logo">
+        <div class="project-description">
+          <h3><i class="fas fa-train"></i> High-Speed Rail Simulation Platform</h3>
+          <p><i class="fas fa-tags"></i> Python, FastAPI, React, Plotly, TailwindCSS | Sept 2024 – Apr 2025</p>
+          <ul>
+            <li>Designed and implemented a full-stack simulation platform to analyze the feasibility of replacing short-haul domestic flights in Germany with high-speed rail, targeting national CO₂ emissions reduction.</li>
+            <li>Developed backend preprocessing pipelines for large-scale transport datasets using Python, applying geospatial filtering, emissions modeling, and route-level passenger estimations.</li>
+            <li>Built an interactive frontend using React and Plotly to visualize key metrics across customizable scenarios.</li>
+            <li>Created simulation models to assess air-to-rail substitution feasibility based on emissions, capacity, frequency, and travel time tradeoffs.</li>
+            <li>Validated simulation outputs against real-world benchmarks and delivered comprehensive technical documentation.</li>
+          </ul>
         </div>
       </div>
+
       <div class="project">
         <div class="project-description">
-          <h3>2. Hotel Management Web Application</h3>
-          <p>Java, HTML, CSS, JavaScript, PostgreSQL, React | September 2023 – December 2023</p>
+          <h3><i class="fas fa-microscope"></i> Tumor Detection System</h3>
+          <p><i class="fas fa-tags"></i> Python, OpenCV, scikit-learn | Winter 2025</p>
+          
           <ul>
-            <li>Designed and implemented a user-centered interface with React and Material-UI, resulting in a highly interactive and responsive user experience.</li>
-            <li>Developed a robust PostgreSQL database system integrated with Hibernate ORM, optimizing data management and system reliability.</li>
-            <li>Conducted thorough testing using JUnit to ensure application stability.</li>
-            <li>Facilitated team collaboration and project management by leveraging GitHub within an Agile framework.</li>
+            <li>Developed a complete computer vision pipeline for segmenting, detecting, and counting tumors in digital pathology images.</li>
+            <li>Implemented both unsupervised (K-means clustering with DICE coefficient evaluation) and supervised segmentation (SVM-based pixel classification) approaches.</li>
+            <li>Designed a candidate-region detection framework using HoG and ORB features for tumor classification (~80% accuracy) and an SVR model for counting.</li>
+            <li>Utilized Python with OpenCV and scikit-learn to build, evaluate, and visualize the solution.</li>
           </ul>
-          <p><strong>Outcomes:</strong></p>
+        </div>
+        <div class="tumor-project-image">
+          <img src="assets/img/pages/TumorDetection%20.jpg" alt="Brain Scan Tumor Detection">
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="Chess-Project-image">
+          <img src="assets/img/pages/ChessAI.jpeg" alt="Chess AI Project">
+        </div>
+        <div class="project-description">
+          <h3><i class="fas fa-chess"></i> Machine Learning Chess Engine</h3>
+          <p><i class="fas fa-tags"></i> Neural Networks, Python | May 2024 – Present</p>
           <ul>
-            <li>Delivered a functional and scalable application on time.</li>
-            <li>Received positive user feedback for the interface and performance.</li>
+            <li>Currently engaged in building and training a neural network specifically for the game of chess, aiming to implement AlphaZero's reinforcement learning capabilities.</li>
+            <li>Working on integrating Monte Carlo Tree Search (MCTS) to enhance the efficiency of policy planning and decision-making.</li>
+            <li>Utilizing Python for the development and implementation of advanced algorithms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-description">
+          <h3><i class="fas fa-hotel"></i> Hotel Management Web Application</h3>
+          <p><i class="fas fa-tags"></i> Java, HTML, CSS, JavaScript, PostgreSQL, React | September 2023 – December 2023</p>
+          <ul>
+            <li>Designed and implemented a user-centered interface with React and Material-UI.</li>
+            <li>Developed a robust PostgreSQL database system integrated with Hibernate ORM.</li>
+            <li>Conducted thorough testing using JUnit to ensure application stability.</li>
+            <li>Facilitated team collaboration and project management using GitHub within an Agile framework.</li>
           </ul>
         </div>
         <div class="website-project-image">
-          <img src="assets/img/pages/websitephotosample.webp" alt ="Website Project">
+          <img src="assets/img/pages/websitephotosample.webp" alt="Hotel Management Project">
         </div>
       </div>
+
       <div class="project">
+        <div class="Robot-Project-image">
+          <img src="assets/img/pages/Robot.jpg" alt="Fire-Extinguishing Robot Project">
+        </div>
         <div class="project-description">
-          <h3>3. Fire-Extinguishing Robot</h3>
-          <p>BrickPi, Raspberry Pi, Python, LeoCAD | September 2023 – December 2023</p>
+          <h3><i class="fas fa-robot"></i> Fire-Extinguishing Robot</h3>
+          <p><i class="fas fa-tags"></i> BrickPi, Raspberry Pi, Python, LeoCAD | September 2023 – December 2023</p>
           <ul>
             <li>Developed an autonomous fire-extinguishing robot to enhance firefighter safety and efficiency.</li>
-            <li>Integrated hardware and software using BrickPi and Raspberry Pi, programmed in Python, and designed with LeoCAD.</li>
-            <li>Created a navigational system capable of autonomously detecting and suppressing fires, resulting in a practical and innovative prototype.</li>
+            <li>Integrated hardware and software using BrickPi and Raspberry Pi, programmed in Python.</li>
+            <li>Created a navigational system capable of autonomously detecting and suppressing fires.</li>
           </ul>
-          <p><strong>Outcomes:</strong></p>
-          <ul>
-            <li>Produced a functional prototype that improved safety and operational efficiency.</li>
-            <li>Enhanced skills in robotics and collaborative engineering.</li>
-          </ul>
-        </div>
-        <div class = "Robot-Project-image">
-          <img src="assets/img/pages/Robot.jpg" alt="Robot Project Logo">
         </div>
       </div>
     </section>
-    <section id="skills" class="content-section" style="display: none;">
-      <!--<h2>Skills</h2>
-      -->
+
+    <section id="skills" class="content-section">
+      <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
       <div class="skills">
-        <h3>Programming Languages:</h3>
-        <p>Java, Python, C, C#, JavaScript, CSS, HTML, VHDL, ARM Assembly</p>
-        <h3>Technologies:</h3>
-        <p>Eclipse, IntelliJ, Visual Studio, Microsoft Office, Unity, SpringBoot, Gradle</p>
-        <h3>Soft Skills:</h3>
-        <p>Team Collaboration, Problem Solving, Communication, Time Management, Leadership</p>
-        <h3>Languages:</h3>
-        <p>Arabic (Native), English (Fluent), French (Beginner)</p>
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <p>
+            <span>Java</span>
+            <span>Python</span>
+            <span>C</span>
+            <span>C#</span>
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>VHDL</span>
+            <span>ARM Assembly</span>
+          </p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Technologies</h3>
+          <p>
+            <span>Eclipse</span>
+            <span>IntelliJ</span>
+            <span>Visual Studio</span>
+            <span>Microsoft Office</span>
+            <span>Unity</span>
+            <span>SpringBoot</span>
+            <span>Gradle</span>
+          </p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-users"></i> Soft Skills</h3>
+          <p>
+            <span>Team Collaboration</span>
+            <span>Problem Solving</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+            <span>Leadership</span>
+          </p>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-language"></i> Languages</h3>
+          <p>
+            <span>Arabic (Native)</span>
+            <span>English (Fluent)</span>
+            <span>French (Beginner)</span>
+          </p>
+        </div>
       </div>
     </section>
-    <section id="contact" class="content-section" style="display: none;">
-      <div class= "project-description">
-        <!--<h2>Contact</h2>
-        -->
-        <p>Thank you for taking the time to explore my portfolio. If you have any questions about my work, are interested in collaboration opportunities, or have potential job offers, I would love to hear from you. Feel free to reach out through any of the contact methods listed below. I am always open to connecting with like-minded professionals and discussing exciting new projects. Looking forward to connecting with you!</p>
+
+    <section id="contact" class="content-section">
+      <h2 class="section-title"><i class="fas fa-envelope"></i> Get In Touch</h2>
+      <div class="project-description">
+        <p>Thank you for taking the time to explore my portfolio. If you have any questions about my work, are interested in collaboration opportunities, or have potential job offers, I would love to hear from you. Feel free to reach out through any of the contact methods listed below.</p>
         <ul>
-          <li><strong>Phone:</strong> +1-(514)-(8841)</li>
-          <li><strong>Email:</strong> <a href="mailto:sameer.karam@mail.mcgill.ca">sameer.karam@mail.mcgill.ca</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sameerkaram/">linkedin.com/in/sameerkaram</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/Samraa66">github.com/Samraa66</a></li>
-          <li><strong>Address:</strong> Montreal, Quebec, Canada</li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <strong>Phone:</strong>
+            +1-(514)-(8841)
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <strong>Email:</strong>
+            <a href="mailto:sameer.karam@mail.mcgill.ca">sameer.karam@mail.mcgill.ca</a>
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/sameerkaram/" target="_blank">linkedin.com/in/sameerkaram</a>
+          </li>
+          <li>
+            <i class="fab fa-github"></i>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/Samraa66" target="_blank">github.com/Samraa66</a>
+          </li>
         </ul>
       </div>
     </section>
-    <section id="thankyou" class="content-section" style="display: none;">
-      <h2>Thank You</h2>
-      <p>Thank you for visiting my portfolio. I appreciate your time and interest in my work. If you have any questions or would like to collaborate on a project, please do not hesitate to contact me. I am always open to new opportunities and look forward to connecting with you!</p>
-    </section>
   </main>
-  <!--
+
   <footer>
-    <div class="container">
+    <div class="footer-content">
       <p>&copy; 2024 Sameer Karam. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sameerkaram/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Samraa66" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:sameer.karam@mail.mcgill.ca"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </footer>
-  --> 
+
   <script>
-    function showSection(sectionId) {
-      const sections = document.querySelectorAll('.content-section');
-      sections.forEach(section => {
-        if (section.id === sectionId) {
-          section.style.display = 'block';
-        } else {
-          section.style.display = 'none';
+    // Add smooth scrolling for all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+          top: window.pageYOffset + offsetPosition,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add scroll reveal animation for sections
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
         }
       });
-    }
-    // to show introduction by default 
-    showSection('introduction');
+    }, observerOptions);
 
+    document.querySelectorAll('.content-section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Add header shadow on scroll
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
   </script>
 </body>
 </html>

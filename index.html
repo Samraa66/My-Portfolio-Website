@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <title>Sameer Karam | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
@@ -28,10 +28,10 @@
         <div class="about-content">
           <h3><i class="fas fa-user"></i> About Me</h3>
           <p>
-            I am Sameer Karam, a Computer Engineering student at McGill University. My passion for technology and problem-solving has driven me to pursue a career in software development and engineering. With a solid foundation in programming languages, data structures, and hardware systems, I continuously seek opportunities to apply my knowledge and creativity to real-world challenges.
+            I am Sameer Karam, a recent Computer Engineering graduate from McGill University. My passion for technology and problem-solving has driven me to pursue a career in software development and engineering. With a solid foundation in programming languages, data structures, and hardware systems, I continuously seek opportunities to apply my knowledge and creativity to real-world challenges.
           </p>
           <p>
-            Throughout my academic journey, I've developed expertise in various areas of computer engineering, from software development and machine learning to computer vision and full-stack development. I'm particularly interested in projects that combine innovative technology with real-world impact, as demonstrated through my work in medical imaging analysis and sustainable transportation solutions.
+            I have officially graduated and am now pursuing a Nanodegree in AI Programming sponsored by Google. Throughout my academic journey, I've developed expertise in various areas of computer engineering, from software development and machine learning to computer vision and full-stack development. I'm particularly interested in projects that combine innovative technology with real-world impact, as demonstrated through my work in medical imaging analysis and sustainable transportation solutions.
           </p>
         </div>
       </div>
@@ -141,6 +141,22 @@
           </ul>
         </div>
       </div>
+
+      <div class="project">
+        <div class="project-description">
+          <h3><i class="fas fa-cloud-sun"></i> Embedded Weather Anomaly Detection System</h3>
+          <p><i class="fas fa-tags"></i> STM32F4, FreeRTOS, I2C, UART, SPI, Kalman Filter, Multi-threading | October 2024 – December 2024</p>
+                     <ul>
+             <li>Designed and implemented a comprehensive embedded system using STM32F407 microcontroller to detect environmental anomalies in real-time weather data.</li>
+             <li>Integrated multiple sensors (temperature, humidity, pressure, gyroscope) via I2C and SPI protocols, achieving 90% detection accuracy through advanced Kalman filtering algorithms.</li>
+             <li>Architected a 3-thread FreeRTOS scheduler (sensor reading, data processing, communication) that reduced system latency by 40% and improved real-time responsiveness.</li>
+             <li>Implemented UART-based communication protocol for data transmission to cloud services, enabling remote monitoring and historical data analysis.</li>
+           </ul>
+        </div>
+        <div class="stm32-project-image">
+          <img src="assets/img/pages/Stm32.webp" alt="STM32 Weather Anomaly Detection System">
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="content-section">
@@ -195,30 +211,38 @@
 
     <section id="contact" class="content-section">
       <h2 class="section-title"><i class="fas fa-envelope"></i> Get In Touch</h2>
-      <div class="project-description">
-        <p>Thank you for taking the time to explore my portfolio. If you have any questions about my work, are interested in collaboration opportunities, or have potential job offers, I would love to hear from you. Feel free to reach out through any of the contact methods listed below.</p>
-        <ul>
-          <li>
+      <div class="contact-container">
+        <p class="contact-intro">Thank you for taking the time to explore my portfolio. If you have any questions about my work, are interested in collaboration opportunities, or have potential job offers, I would love to hear from you. Feel free to reach out through any of the contact methods listed below.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
             <i class="fas fa-phone"></i>
-            <strong>Phone:</strong>
-            +1-(514)-(8841)
-          </li>
-          <li>
+            <div class="contact-details">
+              <strong>Phone:</strong>
+              <span>+1 (514) 884-1234</span>
+            </div>
+          </div>
+          <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <strong>Email:</strong>
-            <a href="mailto:sameer.karam@mail.mcgill.ca">sameer.karam@mail.mcgill.ca</a>
-          </li>
-          <li>
+            <div class="contact-details">
+              <strong>Email:</strong>
+              <a href="mailto:sameer.karam@mail.mcgill.ca">sameer.karam@mail.mcgill.ca</a>
+            </div>
+          </div>
+          <div class="contact-item">
             <i class="fab fa-linkedin"></i>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/sameerkaram/" target="_blank">linkedin.com/in/sameerkaram</a>
-          </li>
-          <li>
+            <div class="contact-details">
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/sameerkaram/" target="_blank">linkedin.com/in/sameerkaram</a>
+            </div>
+          </div>
+          <div class="contact-item">
             <i class="fab fa-github"></i>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/Samraa66" target="_blank">github.com/Samraa66</a>
-          </li>
-        </ul>
+            <div class="contact-details">
+              <strong>GitHub:</strong>
+              <a href="https://github.com/Samraa66" target="_blank">github.com/Samraa66</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
